@@ -1,11 +1,11 @@
 # Fourth & Foreplay landing page
 
-Recovered from AppDeploy landing version 1790919213941. React/Vite frontend with a Vercel Function for early-access signup.
+Live production page: https://fourth-and-foreplay-landing.vercel.app/
 
-Run `npm ci` and `npm run build`. Import `nicksbishop-cloud/fourth-and-foreplay-landing` into Vercel using the Vite preset and the repository root.
+React/Vite frontend with a Vercel Function for early-access signup. Run `npm ci` and `npm run build`. Source is uploaded to `nicksbishop-cloud/fourth-and-foreplay-landing` on main. Initial Vercel production deployment used the prepared source ZIP with Vercel Drop; automatic Git deployments are not connected yet. Use the Vite preset, repository root, and dist output when connecting Git.
 
-The signup endpoint forwards to the existing AppDeploy landing backend, preserving its existing early-access list. It reports success only after the backend confirms persistence. AppDeploy remains a dependency for signup until the list is migrated.
+The signup endpoint forwards to the existing AppDeploy landing backend, preserving its early-access list. It reports success only after the backend confirms persistence. AppDeploy remains a signup dependency until the list is migrated.
 
-Real app screenshots and the supplied commercial are included. Illustrative scores were removed to avoid presenting them as live data.
+Provided logo, real app screenshots, and commercial are included. Illustrative scores were removed to avoid presenting them as live data.
 
-Run `node scripts/check-signup.mjs` for bounded, mocked signup checks that never create a live waitlist entry. The browser preview still requires a visual check before deployment. See WORK_LOG_2026-10-02.md for verification evidence and remaining blockers.
+Run `node scripts/check-signup.mjs` for mocked checks that never create a live waitlist entry. Live method/invalid-email checks and desktop rendering/video playback passed. Mobile visual checking and live successful signup persistence remain unverified. See WORK_LOG_2026-10-02.md for evidence.
